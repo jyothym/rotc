@@ -1,0 +1,17 @@
+<< Assignment 1 >>
+
+1. Start an nginx container
+2. port forward to local
+docker run -p 8080:80 --name myweb -d nginx
+
+3. Check logs
+docker logs myweb
+
+4. Go inside the container
+docker exec -it myweb sh
+
+5. Stop the container
+docker stop myweb
+
+
+<< Assignment 2 >>
