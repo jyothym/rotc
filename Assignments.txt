@@ -4,27 +4,24 @@ Run below commands moving to rotc folder on terminal
 
 -- Manual
 
-1. Start an nginx container
-2. port forward to local
+1. Start an nginx container with port forwarding to local & check if the application is up
 docker run -p 8080:80 --name myweb -d nginx
-
-3. Check logs
-docker logs myweb
-
-4. Go inside the container
-docker exec -it myweb sh
-
-5. Check if the application is up
 curl localhost:8080
 
-6. Stop the container
+2. Check logs
+docker logs myweb
+
+3. Go inside the container
+docker exec -it myweb sh
+
+4. Stop the container
 docker stop myweb
 
 -- Automated
 1. Start an nginx container
 docker-compose up -d
 
-2. To check if the application is up
+2. Check if the application is up
 in browser, give localhost:8080
 
 
